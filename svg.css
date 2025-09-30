@@ -1,0 +1,340 @@
+body{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-left: 0px;
+}
+/*The navigation menu*/
+#hed{
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+*{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+	margin-top: 0%;
+	margin-right: 0%;
+	margin-left: 0%;
+  height: 80px;
+  background: #737373;
+}
+nav img{
+  height: 35px;
+  width: 160px;
+  position: absolute;
+  top:17px;
+  left: 12%;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 100%;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+nav ul li a::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #ff6600;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+  display:none;
+}
+
+
+#main{
+	margin-left: 4%;
+	margin-right: 4%;
+}
+/*top part is for the menu*/
+a:link{ color: white; }
+a:hover, a:focus {color: #ff6600;}
+/*the top part is the top of the website*/
+h1 , h2 , h3{
+	font-family: Helvetica, sans-serif,Arial;
+	font-size: 240%;
+	text-align: center;
+	padding-bottom: 1%;
+	margin-left: 3%;
+	margin-right: 3%;
+
+}
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 125%;
+	padding: 0%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+/*start of imgae rollover*/
+#Goku{
+	background-image: url("goku.png");
+	background-repeat: no-repeat;
+	float:right;
+	height: 180px;
+	width: 250px;
+	margin-bottom: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+#figure{
+	float: right;
+	text-align: right;
+	margin-right: 3%;
+}
+#figcaption{
+	float: right;
+	text-align: right;
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px black;
+
+}
+
+#Goku:hover{
+	background-image: url("ultra.jpg");
+	background-repeat: no-repeat;
+	height: 260px;
+	width: 250px;
+	float:right;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#Superman{
+	float:right;
+	background-image: url("clark kent.jpg");
+	background-repeat: no-repeat;
+	height: 260px;
+	width: 250px;
+	margin-bottom: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#Superman:hover{
+	float:right;
+	background-image: url("superman.jpg");
+	background-repeat: no-repeat;
+	height: 190px;
+	width: 200px;
+	margin-bottom: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+/*end of imge rollover*/
+#GvS ,#GvS2 ,#GvS3, #GvS4, #GvS5, #GvS6, #GvS7, #GvS8{
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size:200%;
+	text-align: left;
+	padding:1%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+#Luffy{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 170%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+#cap{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 150%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+/*table*/
+
+table{
+	text-align: center;
+  border: 1px solid #737373;
+  border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+}
+td {
+  border: 1px solid #737373;
+  padding: .2em .7em;
+  text-align:left;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 115%
+
+}
+th{
+  border: 1px solid #737373;
+  padding: .2em .7em;
+  text-align: center;
+
+}
+th.border{
+	border-left: 1px solid black;
+
+}
+th.left, td.left{
+  text-align: center;
+}
+th.right, td.right{
+  text-align: center;
+}
+thead, tfoot{
+  background-color: #737373;
+  font-weight: bold;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*end of table*/
+
+/* the bottom part is for the website*/
+#blck{
+	border: 2px solid #737373;
+	border-top: 2px solid #737373;
+	border-color: #737373 #737373;
+	border-width: 4px 2px 4px 2px;
+	border-radius: 10px 10px 10px 10px;
+}
+footer{
+	font-family: Arial, Times New Roman, helvetica ;
+	font-size: 90%;
+	background-color: #737373;
+	padding: 7px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right:5px;
+	text-align: center;
+	clear: both;
+
+	align-items: center;
+	justify-items: center;
+}
+#bottom{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom2{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom3{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom4{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom5{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+a:link{ color: #C0C0C0; }
+a:hover, a:focus {color: #ff6600;}
+/*the end*/
+@media (max-width: 1118px) {
+  nav img{
+    left: 8%;
+  }
+
+}
+@media (max-width: 768px) {
+	label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #737373;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  label #btn{
+    display: block;
+  }
+	ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #737373;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 60px 0;
+    line-height: 15px;
+    margin-right: 140px;
+		margin-left: 140px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+}

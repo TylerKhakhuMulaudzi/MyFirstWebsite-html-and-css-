@@ -1,0 +1,359 @@
+/*Navigation menu*/
+*{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+	margin-top: 0%;
+	margin-right: 0%;
+	margin-left: 0%;
+  height: 80px;
+  background: #737373;
+}
+nav img{
+  height: 35px;
+  width: 160px;
+  position: absolute;
+  top:17px;
+  left: 12%;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 100%;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+nav ul li a::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #ff6600;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+  display:none;
+}
+/*top part is for the heading*/
+/*start of body*/
+body{
+  background-color: #737373;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#subscribe{
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-left: 3%;
+  margin-right: 0px;
+  margin-bottom: 3%;
+  width: 540px;
+  height: 360px;
+}
+#subscribe2{
+  text-align: right;
+  margin-bottom: 3%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%
+}
+aside{
+  float: right;
+  width: 580px;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+fieldset{
+  border-color: #ff6600;
+  padding: 10px;
+}
+label{
+  float: left;
+  width: 5em;
+  text-align: right;
+
+}
+legend{
+  font-size: 25px;
+  text-align: center;
+  font-style: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input{
+  margin-left: 1em;
+  margin-bottom: .5em
+}
+input[required]
+input:focus{
+  border: 3px solid #ff6600;
+}
+textarea{
+  height: 5em;
+  width: 25em;
+  font-family:serif;
+  color: #ff6600;
+}
+.mit{
+  text-align: center;
+}
+#submit{
+  width: 120px;
+  height: 25px;
+}
+#reset{
+  width: 120px;
+  height: 25px;
+}
+#bottm{
+  font-size: 40px;
+    margin-right: 55px;
+}
+#bottm1{
+  font-size: 40px;
+    margin-right: 75px;
+    margin-left: 75px;
+}
+#bottom2{
+  font-size: 40px;
+    margin-right: 75px;
+    margin-left: 75px;
+}
+#bottm3{
+  font-size: 40px;
+    margin-right: 5px;
+    margin-left: 75px;
+
+}
+/*end of body*/
+/*footer*/
+#blck{
+	border: 2px solid #737373;
+	border-top: 2px solid #737373;
+	border-color: #737373 #737373;
+	border-radius: 10px 10px 10px 10px;
+  border-width: 4px 2px 4px 2px;
+}
+footer{
+	font-family: Arial, Times New Roman, helvetica ;
+	font-size: 90%;
+	background-color: #737373;
+	padding: 7px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right:5px;
+	text-align: center;
+	clear: both;
+
+	align-items: center;
+	justify-items: center;
+	}
+a:link{ color: #C0C0C0; }
+a:hover, a:focus {color: #ff6600;}
+/*footer ends*/
+/*respnive website*/
+@media (max-width: 1118px) {
+  #subscribe{
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #subscribe2{
+    text-align: right;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  nav img{
+    left: 8%;
+
+  }
+}
+@media (max-width: 768px) {
+  #subscribe{
+    display: none;
+    width: 50%;
+    height: 50%;
+  }
+  aside{
+    width: 640px;
+    float: left;
+  }
+  label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #737373;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #737373;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 70px 0;
+    line-height: 20px;
+    margin-right: 193px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+  #submit{
+    width: 55px;
+    height: 25px;
+  }
+  #reset{
+    width: 55px;
+    height: 25px;
+  }
+  #subscribe{
+    display: none;
+  }
+
+  #subscribe2{
+    text-align: right;
+    margin-bottom: 3%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  aside{
+    float: left;
+    width: 300px;
+
+  }
+  fieldset{
+    border-color: #ff6600;
+    padding: 10px;
+    width: 290px;
+    margin-left: 5px;
+    margin-right: 25px;
+  }
+  label{
+    float: left;
+    width: 5em;
+    text-align: right;
+
+  }
+  legend{
+    font-size: 25px;
+    text-align: center;
+    font-style: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  input{
+    margin-left: 1em;
+    margin-bottom: .5em
+  }
+  input[required]
+  input:focus{
+    border: 3px solid #ff6600;
+  }
+  textarea{
+    height: 5em;
+    width: 25em;
+    font-family:serif;
+    color: #ff6600;
+  }
+  .mit{
+    text-align: center;
+  }
+  #submit{
+    width: 120px;
+    height: 25px;
+  }
+  #reset{
+    width: 120px;
+    height: 25px;
+  }
+  #bottm{
+    font-size: 40px;
+      margin-right: 25%;
+  }
+  #bottm1{
+    font-size: 40px;
+      margin-right: 20%;
+      margin-left: 20%;
+  }
+  #bottom2{
+    font-size: 40px;
+      margin-right: 20%;
+      margin-left: 20%;
+  }
+  #bottm3{
+    font-size: 40px;
+      margin-right: 20%;
+      margin-left: 25%;
+
+  }
+}
+/*end of responsive website*/
