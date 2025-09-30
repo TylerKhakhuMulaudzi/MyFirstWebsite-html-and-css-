@@ -1,0 +1,474 @@
+/*Navigation menu*/
+*{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  height: 80px;
+  background: #737373;
+}
+nav img{
+  height: 35px;
+  width: 160px;
+  position: absolute;
+  top:17px;
+  left: 12%;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 100%;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+nav ul li a::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #ff6600;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+  display:none;
+}
+/*top part is for the heading*/
+
+/*footer*/
+#blck{
+	border: 2px solid #737373;
+	border-top: 2px solid #737373;
+	border-color: #737373 #737373;
+	border-width: 4px 2px 4px 2px;
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+footer{
+	font-family: Arial, Times New Roman, helvetica ;
+	font-size: 90%;
+	background-color: #737373;
+	padding: 7px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right:5px;
+	text-align: center;
+	clear: both;
+
+	align-items: center;
+	justify-items: center;
+	}
+  #bottom{
+  	color: white;
+  	font-weight: bold;
+  	background-color:#737373;
+  }
+  #bottom2{
+  	color: white;
+    font-weight: bold;
+  	background-color:#737373;
+  }
+  #bottom3{
+  	color: white;
+    font-weight: bold;
+  	background-color:#737373;
+  }
+  #bottom4{
+  	color: white;
+    font-weight: bold;
+  	background-color:#737373;
+  }
+  #bottom5{
+  	color: white;
+    font-weight: bold;
+  	background-color:#737373;
+    font-size: 20px;
+  }
+a:link{ color: #C0C0C0; }
+a:hover, a:focus {color:  #ff751a;}
+/*footer ends*/
+/*body*/
+#heding{
+	color: grey;
+	font-size: 450%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+	padding: 0%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-left:1%;
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+#Dark{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 125%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+#wallppr{
+  font-size: 100%;
+  background-image: url("drksde.png");
+  width: 440px;
+  height: 320px;
+  margin-left: 35%;
+  margin-right: 50%;
+
+  figure{
+    float: center;
+    margin-right: 1.5em;
+    align-content: center;
+  }
+  figcaption{
+    display: block;
+    font-weight: normal;
+    padding-top: .25em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #737373;}}
+#wallppr:hover{
+  background-image: url("darksideofanime.jpg");
+  width: 440px;
+  height: 320px;
+  figure{
+    float: center;
+    margin-right: 1.5em;
+    align-content: center;
+  }
+  figcaption{
+    display: none;
+    font-weight: normal;
+    padding-top: .25em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #737373;
+  }
+  #attackontitan{
+    display: block;
+    font-weight: normal;
+    padding-top: .25em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #737373;}}
+h1, h2, h3{
+    font-size: 200%;
+    font-family:  sans-serif,Arial, Helvetica ;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+    font-size:250%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+p{
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 120%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*end of body*/
+/*start of figcaption table*/
+figure, figcaption{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  text-align: center;
+  margin: 2px;
+  padding: 0;
+
+}
+#incomes{
+  font-size: 150%;
+  font-family: -apple-system, Roboto, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px black;
+  font-size:250%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-collapse: collapse;
+}
+
+figcaption{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom:  .25em;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 10px auto;
+  border: 1px solid #737373;
+}
+th, td {
+  border:1px solid #737373;
+  padding: .2em .7em;
+  text-align: right;
+}
+th.left, td.left {
+  text-align: left;
+
+}
+thead, tfoot {
+  background-color: #737373;
+}
+tfoot {
+  font-weight: bold;
+}
+/*end of figcaption table*/
+/*media onscreen starts here*/
+@media (max-width: 1118px) {
+  nav img{
+    left: 8%;
+
+  }
+}
+@media (max-width: 768px) {
+	label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #737373;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+
+  #wallppr{
+    font-size: 100%;
+    background-image: url("drksde.png");
+    width: 340px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    figure{
+      float: center;
+      margin-right: 1.5em;
+      align-content: center;
+    }
+    figcaption{
+      display: block;
+      font-weight: normal;
+      padding-top: .25em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #737373;}}
+  #wallppr:hover{
+    background-image: url("darksideofanime.jpg");
+    width: 340px;
+    height: 320px;
+    figure{
+      float: center;
+      margin-right: 1.5em;
+      align-content: center;
+    }
+    figcaption{
+      display: none;
+      font-weight: normal;
+      padding-top: .25em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #737373;
+    }
+
+    #incomes{
+      font-size: 150%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 5px 5px 5px black;
+      font-size:250%;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-collapse: collapse;
+      width: auto;
+    }
+
+    figcaption{
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      font-size: 20px;
+      padding-bottom:  .25em;
+    }
+
+    table{
+      border-collapse: collapse;
+      margin: 10px auto;
+      border: 1px solid #737373;
+      width: auto;
+    }
+    th, td {
+      border:1px solid #737373;
+      padding: .2em .7em;
+      text-align: right;
+    }
+    th.left, td.left {
+      text-align: left;
+
+    }
+    thead, tfoot {
+      background-color: #737373;
+    }
+    tfoot {
+      font-weight: bold;}}
+@media (max-width: 425px) {
+  label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #737373;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 60px 0;
+    line-height: 15px;
+    margin-right: 190px;
+    margin-left: 100px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+	table{
+		white-space: nowrap;
+
+	}
+
+  #wallppr{
+    font-size: 100%;
+    background-image: url("drksde.png");
+    width: 340px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    figure{
+      float: center;
+      margin-right: 1.5em;
+      align-content: center;
+    }
+    figcaption{
+      display: block;
+      font-weight: normal;
+      padding-top: .25em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #737373;}}
+  #wallppr:hover{
+    background-image: url("darksideofanime.jpg");
+    width: 340px;
+    height: 320px;
+    figure{
+      float: center;
+      margin-right: 1.5em;
+      align-content: center;
+    }
+    figcaption{
+      display: none;
+      font-weight: normal;
+      padding-top: .25em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #737373;
+    }
+
+    #incomes{
+      font-size: 150%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 5px 5px 5px black;
+      font-size:250%;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-collapse: collapse;
+      width: auto;
+    }
+
+    figcaption{
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      font-size: 20px;
+      padding-bottom:  .25em;
+    }
+
+    table{
+      border-collapse: collapse;
+      margin: 10px auto;
+      border: 1px solid #737373;
+      width: auto;
+    }
+    th, td {
+      border:1px solid #737373;
+      padding: .2em .7em;
+      text-align: right;
+    }
+    th.left, td.left {
+      text-align: left;}
+    thead, tfoot {
+      background-color: #737373;}
+    tfoot {
+      font-weight: bold;}}

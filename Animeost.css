@@ -1,0 +1,232 @@
+/*start of navigationmenu*/
+*{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  height: 80px;
+  background: #737373;
+}
+nav img{
+  height: 35px;
+  width: 160px;
+  position: absolute;
+  top:17px;
+  left: 12%;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 100%;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+nav ul li a::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #ff6600;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+  display:none;
+}
+/*end of navigationmenu*/
+/*start of body*/
+a:link{ color: white; }
+a:hover, a:focus {color: #ff6600;}
+
+h1,h2,h3{
+  text-align: center;
+  font-family: sans-serif,Arial, Helvetica ;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px black;
+  font-size:250%;
+  margin-left: 5%;
+  margin-right: 5%;}
+p{
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 140%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*end of body*/
+/*start of table*/
+table{
+	border: 1px solid #ff6600;
+	border-collapse: collapse;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	white-space: nowrap;
+}
+td{
+	border: 1px solid  #737373;
+	padding: .2em .7em;
+	text-align: right;
+}
+th{
+	border: 1px solid  #737373;
+	padding: .2em .7em;
+	text-align: center;
+}
+th.left, td.left{
+	text-align: left
+}
+thead{
+	background-color:  #737373;
+	font-weight: bold;
+	text-align: center;
+}
+/*end of table*/
+/*start of footer*/
+#blck{
+	border: 2px solid  #737373;
+	border-top: 2px solid  #737373;
+	border-color:  #737373  #737373;
+	border-width: 4px 2px 4px 2px;
+	border-radius: 10px 10px 10px 10px;
+}
+footer{
+	font-family: Arial, Times New Roman, helvetica ;
+	font-size: 90%;
+	background-color:  #737373;
+	padding: 7px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right:5px;
+	text-align: center;
+	clear: both;
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+#bottom{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom2{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom3{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom4{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom5{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+audio{
+	width: 200px;
+	height: 35px;
+}
+/*end of footer*/
+/*start of responsive web page*/
+@media (max-width: 1118px) {
+  nav img{
+    left: 8%;
+
+  }
+}
+@media (max-width: 768px) {
+	label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #737373;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  label #btn{
+    display: block;
+  }
+	ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #737373;
+    top: 80px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+  }
+	nav ul li{
+    display: block;
+    margin: 60px 0;
+    line-height: 15px;
+    margin-right: 350px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+}
+/*end of navigation menu*/
