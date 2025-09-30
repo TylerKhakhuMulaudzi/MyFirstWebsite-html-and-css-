@@ -1,0 +1,275 @@
+
+header{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#main{
+	background-color: white;
+	margin-top: 1%;
+	margin-bottom: 0%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+h1 ,h2 ,h3{
+	color: black;
+	text-align: center;
+	text-shadow: 5px 5px 5px black;
+	font-size:200%;
+	font-family: sans-serif,Arial, Helvetica ;
+	font-weight: bold;
+}
+.facts{
+	background-color:white;
+	font-size: 150%;
+	font-weight: normal;
+	font-family: "Times New Roman", Times, serif;
+	padding: 0;
+	}
+	ol {
+	  list-style: none;
+	}
+	ol li::before {
+	  content: "\2022";
+	  color: orange;
+	  font-weight: bold;
+	  display: inline-block;
+	  width: 1em;
+	  margin-left: 1em;
+	}
+
+.Types{
+	background-color: white ;
+	font-size: 150%;
+	font-weight: lighter;
+	font-family:"Times New Roman", Times, serif;
+	padding: 0;
+}
+ul.visible{
+	display: block;
+	list-style-type: circle;
+}
+#intro{
+	font-size:155%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	padding: 0;
+}
+#sub, #sub2, #sub3, #sub4{
+	font-family:Arial, Helvetica, sans-serif;
+}
+#sub:first-child::first-letter{
+	font-weight: bold;
+	font-size: 200%;
+}
+#sub2:first-child::first-letter{
+	font-weight: bold;
+	font-size: 200%;
+}
+#sub3:first-child::first-letter{
+	font-weight: bold;
+	font-size: 200%;
+}
+#sub4:first-child::first-letter{
+	font-weight: bold;
+	font-size: 200%;
+}
+#link{
+	color: black;
+	text-shadow: 4px 4px 4px black;
+
+}
+em{
+	border-bottom: 1px solid black;
+}
+footer{
+	font-family: Arial, Times New Roman, helvetica ;
+	font-size: 90%;
+	background-color: #737373;
+	padding: 7px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right:5px;
+	text-align: center;
+	clear: both;
+
+	align-items: center;
+	justify-items: center;
+}
+#bottom{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom2{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom3{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom4{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+#bottom5{
+	color: white;
+	font-weight: bold;
+	background-color:#737373;
+}
+a:link{ color: white; }
+a:hover, a:focus {color: #ff751a;}
+
+/*this is the the navigation menu*/
+#facts{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-left: 0px;
+}
+*{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  height: 80px;
+  background: #737373;
+}
+nav img{
+  height: 35px;
+  width: 160px;
+  position: absolute;
+  top:17px;
+  left: 12%;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 100%;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+nav ul li a::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #ff751a;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+  display:none;
+}
+/*end of navigationmenu*/
+/*top part is for the heading*/
+
+#blck{
+	border: 2px solid #737373;
+	border-top: 2px solid black;
+	border-color: #737373 #737373;
+	border-width: 4px 2px 4px 2px;
+	border-radius: 10px 10px 10px 10px;
+}
+/*end of heading*/
+/*start of media RWP*/
+@media (max-width: 1118px) {
+  nav img{
+    left: 8%;
+  }
+
+}
+@media (max-width: 768px) {
+	label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #737373;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+
+}
+@media (max-width: 425px) {
+  label #btn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #737373;
+    top: 80px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0%;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+
+
+}
+
+/*end of media RWP*/
